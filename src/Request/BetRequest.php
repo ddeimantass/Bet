@@ -45,7 +45,6 @@ class BetRequest
      *          }
      *     )
      * )
-
      */
     private $selections;
 
