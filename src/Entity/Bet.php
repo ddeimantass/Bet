@@ -55,9 +55,10 @@ class Bet
      * @param float $stakeAmount
      * @return Bet
      */
-    public function setStakeAmount(float $stakeAmount): Bet
+    public function setStakeAmount(float $stakeAmount): self
     {
         $this->stakeAmount = $stakeAmount;
+
         return $this;
     }
 
@@ -73,9 +74,10 @@ class Bet
      * @param DateTime $createdAt
      * @return Bet
      */
-    public function setCreatedAt(DateTime $createdAt): Bet
+    public function setCreatedAt(DateTime $createdAt): self
     {
         $this->createdAt = $createdAt;
+
         return $this;
     }
 }

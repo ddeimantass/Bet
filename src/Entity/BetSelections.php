@@ -55,9 +55,10 @@ class BetSelections
      * @param Bet $bet
      * @return BetSelections
      */
-    public function setBet(Bet $bet): BetSelections
+    public function setBet(Bet $bet): self
     {
         $this->bet = $bet;
+
         return $this;
     }
 
@@ -73,9 +74,10 @@ class BetSelections
      * @param int $selectionId
      * @return BetSelections
      */
-    public function setSelectionId(int $selectionId): BetSelections
+    public function setSelectionId(int $selectionId): self
     {
         $this->selectionId = $selectionId;
+
         return $this;
     }
 
@@ -91,9 +93,10 @@ class BetSelections
      * @param float $odds
      * @return BetSelections
      */
-    public function setOdds(float $odds): BetSelections
+    public function setOdds(float $odds): self
     {
         $this->odds = $odds;
+
         return $this;
     }
 }

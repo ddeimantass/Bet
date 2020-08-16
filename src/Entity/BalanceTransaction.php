@@ -55,9 +55,10 @@ class BalanceTransaction
      * @param Player $player
      * @return BalanceTransaction
      */
-    public function setPlayer(Player $player): BalanceTransaction
+    public function setPlayer(Player $player): self
     {
         $this->player = $player;
+
         return $this;
     }
 
@@ -73,9 +74,10 @@ class BalanceTransaction
      * @param float $amount
      * @return BalanceTransaction
      */
-    public function setAmount(float $amount): BalanceTransaction
+    public function setAmount(float $amount): self
     {
         $this->amount = $amount;
+
         return $this;
     }
 
@@ -91,9 +93,10 @@ class BalanceTransaction
      * @param float $amountBefore
      * @return BalanceTransaction
      */
-    public function setAmountBefore(float $amountBefore): BalanceTransaction
+    public function setAmountBefore(float $amountBefore): self
     {
         $this->amountBefore = $amountBefore;
+
         return $this;
     }
 }

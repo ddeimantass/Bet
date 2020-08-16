@@ -41,9 +41,10 @@ class Player
      * @param int $id
      * @return Player
      */
-    public function setId(int $id): Player
+    public function setId(int $id): self
     {
         $this->id = $id;
+
         return $this;
     }
 
@@ -59,9 +60,10 @@ class Player
      * @param float $balance
      * @return Player
      */
-    public function setBalance(float $balance): Player
+    public function setBalance(float $balance): self
     {
         $this->balance = $balance;
+
         return $this;
     }
 }
